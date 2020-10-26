@@ -1,0 +1,353 @@
+@import "fonts.css";
+
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	margin: 0;
+	padding: 0;
+	font-weight: inherit;
+}
+/* .wrapper{
+    background-image: url(../img/BG.jpg);
+    width: 100%;
+    height: 4600px;
+    background-repeat: no-repeat; */
+/* background-size: cover; */
+/* background-position: center;  
+}*/
+body {
+	height: 4600px;
+	width: 100%;
+	background-color: rgba(11, 29, 38, 1);
+}
+.wrapper {
+	height: 1620px;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(11, 29, 38, 0) 80%, rgba(11, 29, 38, 1) 100%),
+		url(../img/BG\ Hero.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* start header */
+.header {
+	padding: 64px 80px 0;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	align-items: center;
+	margin-bottom: 190px;
+}
+.header__logo {
+	text-transform: uppercase;
+	font-size: 32px;
+}
+.header__menu {
+	font-family: "Gilroy";
+}
+.header a {
+	color: #fff;
+}
+.header li {
+	display: inline-block;
+}
+.header li + li {
+	margin-left: 40px;
+}
+.header__acount {
+	font-family: "Gilroy";
+	position: relative;
+}
+.header__acount a::before {
+	content: "";
+	background-image: url(../img/icon/cart.png);
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: -32px;
+	top: -3px;
+}
+/* end header */
+
+/* start main */
+.main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 80px;
+	margin-bottom: 400px;
+}
+.main__social {
+	width: 22px;
+	height: 173px;
+	position: relative;
+	top: 15px;
+}
+.main__social-text {
+	position: absolute;
+	display: block;
+	transform: rotate(90deg);
+	font-size: 18px;
+	font-family: "Gilroy";
+	color: #fff;
+	width: 77px;
+	height: 22px;
+	top: 30px;
+	left: -28px;
+	margin-bottom: 26px;
+}
+.main__social a {
+	width: 24px;
+	height: 24px;
+}
+.instagram {
+	position: absolute;
+	background-image: url(../img/icon/instagram.svg);
+	top: 100px;
+}
+.twitter {
+	position: absolute;
+	background-image: url(../img/icon/twitter.svg);
+	top: 149px;
+}
+
+.main__content {
+	margin: 0 auto;
+}
+
+.main__content1 {
+	font-family: "Gilroy";
+	color: #fbd784;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding-left: 80px;
+	position: relative;
+}
+.main__content1::before {
+	content: "";
+	background-color: #fbd784;
+	width: 72px;
+	height: 2px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+.main__content h1 {
+	max-width: 950px;
+	max-height: 200px;
+	font-weight: 500;
+	font-size: 75px;
+	color: #fff;
+	margin-bottom: 30px;
+	font-family: 'Chronicle Display';
+}
+.scroll {
+	font-size: 18px;
+	color: #fff;
+}
+.scroll::after {
+	content: url(../img/icon/arrow_downward_24px.svg);
+	padding-left: 15px;
+	height: 24px;
+	width: 16px;
+	vertical-align: middle;
+}
+/* .start__list,
+.start__list a {
+	text-align: right;
+	font-family: "Gilroy";
+	font-size: 18px;
+	color: #fff;
+}
+.start__list a {
+	height: 60px;
+	border-right: 3px solid #ffffff55;
+	padding: 21px 20px 0 0;
+}
+.start__list a:hover {
+	font-size: 22px;
+}
+.start__link:focus {
+	border-right: 3px solid #ffffff;
+	font-size: 22px;
+} */
+
+
+/* Меню перехода по страницам */
+.start__list {
+	text-align: right;
+	font-size: 18px;
+	font-family: "Gilroy";
+}
+.start__link {
+	color: #ffffff55;
+	height: 60px;
+	border-right: 3px solid #ffffff55;
+	padding: 35px 20px 0 0;
+}
+
+.start__link:hover {
+	font-size: 22px;
+	color: #fff;
+	border-right: 3px solid #ffffff;
+}
+
+.start__link:active {
+	font-size: 22px;
+	border-right: 3px solid #ffffff;
+	color: #fff;
+}
+
+.main__content2 {
+	position: absolute;
+	right: 80px;
+	top: 280px;
+	position: fixed;
+}
+
+/* Конец меню перехода по страницам */
+
+
+
+
+
+/* start content */
+.content {
+	background-color: #ffffff22;
+	max-width: 1462px;
+	/* height: 100%; */
+	padding-top: 400px;
+	margin: 400px auto 0;
+}
+/* end content */
+
+/* start section */
+.section__content__wrapper {
+	width: 632px;
+	height: 439px;
+	padding-left: 120px;
+	position: relative;
+	z-index: 1;
+	top: -118px;
+}
+
+.section {
+	margin-bottom: 200px;
+}
+
+.section1 {
+	display: flex;
+	justify-content: space-between;
+}
+.section__content__number {
+	font-size: 200px;
+	padding-top: 30px;
+	color: #ffffff55;
+	font-weight: 700;
+}
+.section__content {
+	width: 100%;
+	font-family: "Gilroy";
+	font-size: 18px;
+	color: #fff;
+}
+.section__empty {
+	width: calc(100% / 8);
+	height: 720px;
+}
+
+.section__images {
+	width: 566px;
+	height: 720px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	display: inline-block;
+}
+
+/* .section__images {
+	min-height: 720px;
+	width: calc(100% / 3);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+} */
+.section__content1 {
+	color: #fbd784;
+	text-transform: uppercase;
+	padding-left: 80px;
+	position: relative;
+	margin-bottom: 27px;
+	letter-spacing: 6px;
+}
+.section__content1::before {
+	content: "";
+	background-color: #fbd784;
+	width: 58px;
+	height: 2px;
+	position: absolute;
+	left: 7px;
+	top: 10px;
+}
+.section__content__title {
+	margin-bottom: 27px;
+	font-family: 'Chronicle Display';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 66px;
+	line-height: 77px;
+}
+.section__content__text {
+	margin-bottom: 27px;
+	line-height: 24px;
+}
+.section__content2 {
+	color: #fbd784;
+}
+.section__content2::after {
+	content: url(../img/icon/arrow_downward_24px2.svg);
+	padding-left: 15px;
+	height: 16px;
+	width: 24px;
+	vertical-align: middle;
+}
+
+.section2 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.section__content__left {
+	width: 100%;
+	font-family: "Gilroy";
+	font-size: 18px;
+	color: #fff;
+	padding-left: 120px;
+}
+
+.section3 {
+	display: flex;
+	justify-content: space-between;
+}
+/* end section */
